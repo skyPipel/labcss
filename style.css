@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================
+   2. BODY & TYPOGRAPHY
+   ========================= */
+body {
+    font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #1A2E4A;
+    background-color: #F4F7FC;
+    min-height: 100vh;
+}
+
+
+/* =========================
+   3. HEADER
+   ========================= */
+header {
+    background-color: #0A1628;
+    color: white;
+    padding: 48px 30px 32px;
+    text-align: center;
+}
+
+header::before {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #F5B800;
+    margin: 0 auto 24px;
+    border-radius: 2px;
+}
+
+
+/* =========================
+   4. PROFILE IMAGE
+   ========================= */
+header img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid #F5B800;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 20px;
+    box-shadow: 0 0 0 6px rgba(245, 184, 0, 0.2);
+}
+
+
+/* =========================
+   HEADER TYPOGRAPHY
+   ========================= */
+header h1 {
+    font-size: 28px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 6px;
+    letter-spacing: 0.5px;
+}
+
+header h2 {
+    font-size: 16px;
+    font-weight: 400;
+    color: #F5B800;
+    letter-spacing: 1px;
+    margin-bottom: 4px;
+}
+
+header h3 {
+    font-size: 13px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 24px;
+}
+
+
+/* =========================
+   5. NAVIGATION
+   ========================= */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 4px;
+}
+
+nav a {
+    color: #0A1628;
+    background-color: #F5B800;
+    text-decoration: none;
+    padding: 7px 18px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    transition: background-color 0.2s, transform 0.15s;
+    display: inline-block;
+}
+
+nav a:hover {
+    background-color: #FFD040;
+    transform: translateY(-2px);
+}
+
+nav a:active {
+    transform: translateY(0);
+}
+
+
+/* =========================
+   6. MAIN CONTENT
+   ========================= */
+main {
+    max-width: 800px;
+    margin: 32px auto;
+    padding: 0 20px;
+}
+
+
+/* =========================
+   7. SECTION
+   ========================= */
+section {
+    background-color: white;
+    border-radius: 10px;
+    padding: 28px 32px;
+    margin-bottom: 20px;
+    border-left: 4px solid #2A6DB5;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+    transition: box-shadow 0.2s;
+}
+
+section:hover {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.10);
+}
+
+section#kontak {
+    border-left-color: #F5B800;
+}
+
+section#hobi {
+    border-left-color: #2E7D32;
+}
+
+section#langkah {
+    border-left-color: #E07B39;
+}
+
+
+/* =========================
+   8. SECTION HEADINGS
+   ========================= */
+section h2 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #0A1628;
+    margin-bottom: 14px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #F4F7FC;
+}
+
+section h3 {
+    font-size: 15px;
+    font-weight: 600;
+    color: #2A6DB5;
+    margin: 18px 0 8px;
+}
+
+
+/* =========================
+   9. PARAGRAPH & TEXT
+   ========================= */
+section p {
+    color: #1A2E4A;
+    font-size: 15px;
+    margin-bottom: 12px;
+    line-height: 1.75;
+}
+
+
+/* =========================
+   10. BLOCKQUOTE
+   ========================= */
+blockquote {
+    background-color: #EBF3FB;
+    border-left: 5px solid #2A6DB5;
+    border-radius: 0 8px 8px 0;
+    padding: 16px 20px;
+    margin: 16px 0;
+    color: #1A2E4A;
+    font-style: italic;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+blockquote::before {
+    content: '\201C';
+    font-size:
